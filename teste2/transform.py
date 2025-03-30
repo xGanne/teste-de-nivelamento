@@ -67,7 +67,7 @@ def salvar_csv_e_compactar(df, nome_csv, nome_zip):
     Salva o DataFrame em um arquivo CSV e compacta em um arquivo ZIP.
     """
     print(f"Salvando dados em: {nome_csv}")
-    df.to_csv(nome_csv, index=False, encoding='utf-8-sig')
+    df.to_csv(nome_csv, index=False, sep=';', encoding='utf-8-sig')  # Alterado para usar ";" como separador
 
     print(f"Compactando em: {nome_zip}")
     with zipfile.ZipFile(nome_zip, 'w', zipfile.ZIP_DEFLATED) as zipf:

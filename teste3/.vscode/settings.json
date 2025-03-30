@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "teste3 Nivelamento",
+            "database": "operadoras_saude",
+            "username": "postgres",
+            "password": "2213404o",
+            "connectionTimeout": 30
+        }
+    ]
+}
