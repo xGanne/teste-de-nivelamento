@@ -1,0 +1,545 @@
+{
+	"info": {
+		"_postman_id": "5df39011-5994-446b-ab14-bb7a4a896ce3",
+		"name": "OperadorasSaude API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43597530",
+		"_collection_link": "https://felipeaugusto-4071735.postman.co/workspace/Felipe-Augusto's-Workspace~417a35f1-2737-48c5-83ae-a932b4127983/collection/43597530-5df39011-5994-446b-ab14-bb7a4a896ce3?action=share&source=collection_link&creator=43597530"
+	},
+	"item": [
+		{
+			"name": "busca2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=uniodonto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "uniodonto"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=uniodonto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "uniodonto"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:27:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16053"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"12281350\",\n            \"CNPJ\": \"22130000125\",\n            \"Cargo_Representante\": \"SUPERINTENDENTE\",\n            \"Cidade\": \"Caçapava\",\n            \"Complemento\": null,\n            \"DDD\": \"12\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodontocacapava@gmail.com\",\n            \"Fax\": 36525373,\n            \"Logradouro\": \"RUA CEL JOÃO  DIAS GUIMARÃES\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO\",\n            \"Numero\": \"20\",\n            \"Razao_Social\": \"UNIODONTO DE CACAPAVA COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"347302\",\n            \"Representante\": \"MARIA ANGELICA GIOVANELLI\",\n            \"Telefone\": \"36525619\",\n            \"UF\": \"SP\",\n            \"relevance\": 58\n        },\n        {\n            \"Bairro\": \"NAZARÉ\",\n            \"CEP\": \"66040000\",\n            \"CNPJ\": \"15308521000188\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Belém\",\n            \"Complemento\": null,\n            \"DDD\": \"91\",\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"uniodopa@uniodontobelem.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV GENTIL BITTENCOURT\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO\",\n            \"Numero\": \"1212\",\n            \"Razao_Social\": \"UNIODONTO BELÉM - COOPERATIVA DE ASSISTÊNCIA À SAÚDE ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"368555\",\n            \"Representante\": \"ARIOSTO MARIA CHAVES DIAS\",\n            \"Telefone\": \"32024140\",\n            \"UF\": \"PA\",\n            \"relevance\": 56\n        },\n        {\n            \"Bairro\": \"GILBERTO MACHADO\",\n            \"CEP\": \"29303310\",\n            \"CNPJ\": \"2580965000126\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Cachoeiro de Itapemirim\",\n            \"Complemento\": \"EDIF IBISA\",\n            \"DDD\": \"28\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"gerencia@uniodontoes.coop.br\",\n            \"Fax\": 35111500,\n            \"Logradouro\": \"RUA RESK SALIN CARONE\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO\",\n            \"Numero\": \"50\",\n            \"Razao_Social\": \"UNIODONTO ESPIRITO SANTO COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 3,\n            \"Registro_ANS\": \"370711\",\n            \"Representante\": \"ADRIANO BASTOS BARBOSA\",\n            \"Telefone\": \"35111500\",\n            \"UF\": \"ES\",\n            \"relevance\": 56\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"15010110\",\n            \"CNPJ\": \"53206108000100\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"São José do Rio Preto\",\n            \"Complemento\": null,\n            \"DDD\": \"17\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodorp@uniodontoriopreto.com.br\",\n            \"Fax\": 32346005,\n            \"Logradouro\": \"RUA INDEPENDENCIA \",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO\",\n            \"Numero\": \"2651\",\n            \"Razao_Social\": \"UNIODONTO SÃO JOSÉ DO RIO PRETO - COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"303259\",\n            \"Representante\": \"JOSÉ CARLOS AFONSO CUGINOTTI\",\n            \"Telefone\": \"32118400\",\n            \"UF\": \"SP\",\n            \"relevance\": 56\n        },\n        {\n            \"Bairro\": \"MAURÍCIO DE NASSAU\",\n            \"CEP\": \"55012530\",\n            \"CNPJ\": \"1141489000184\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Caruaru\",\n            \"Complemento\": null,\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"2004-05-21\",\n            \"Endereco_eletronico\": \"uniodontocaruaru@hotmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA RÁDIO CLUBE DE PERNAMBUCO\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO CARUARU\",\n            \"Numero\": \"88\",\n            \"Razao_Social\": \"UNIODONTO - COOPERATIVA ODONTOLOGICA DE CARUARU E REGIÃO AGRESTE DO ESTADO DE PERNAMBUCO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"414891\",\n            \"Representante\": \"RÔNIO DE MEDEIROS GALINDO\",\n            \"Telefone\": null,\n            \"UF\": \"PE\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"ALTO DO CRUZEIRO\",\n            \"CEP\": \"57312480\",\n            \"CNPJ\": \"2988689000130\",\n            \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n            \"Cidade\": \"Arapiraca\",\n            \"Complemento\": null,\n            \"DDD\": \"82\",\n            \"Data_Registro_ANS\": \"1999-04-14\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontoarapiraca.com.br\",\n            \"Fax\": 35223429,\n            \"Logradouro\": \"RUA PADRE JEFERSON DE CARVALHO\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO ARAPIRACA\",\n            \"Numero\": \"43\",\n            \"Razao_Social\": \"UNIODONTO ARAPIRACA COOPERATIVA DE TRABALHO ODONTOLÓGICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"403512\",\n            \"Representante\": \"CLAUDIA VALERIA LIRA BARBOSA \",\n            \"Telefone\": \"35222383\",\n            \"UF\": \"AL\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"59300000\",\n            \"CNPJ\": \"1751280000132\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Caicó\",\n            \"Complemento\": null,\n            \"DDD\": \"84\",\n            \"Data_Registro_ANS\": \"1998-12-30\",\n            \"Endereco_eletronico\": \"uniodontoserido@terra.com.br\",\n            \"Fax\": 844173799,\n            \"Logradouro\": \"RUA SENADOR JOSÉ BERNARDO \",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DO SERIDÓ\",\n            \"Numero\": \"663\",\n            \"Razao_Social\": \"UNIODONTO COOPERATIVA ODONTOLÓGICA DO SERIDÓ LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"343919\",\n            \"Representante\": \"MARCO POLO AYRES DO RÊGO\",\n            \"Telefone\": \"34211477\",\n            \"UF\": \"RN\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13465000\",\n            \"CNPJ\": \"69015113000167\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Americana\",\n            \"Complemento\": \"VILA PAVAN\",\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodontoamer@uol.com.br\",\n            \"Fax\": 34611430,\n            \"Logradouro\": \"RUA PADRE ANCHIETA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE AMERICANA COOPERATIVA ODONTOLÓGICA\",\n            \"Numero\": \"105\",\n            \"Razao_Social\": \"UNIODONTO DE AMERICANA COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"347604\",\n            \"Representante\": \"SILNEY MARCOS BERALDO\",\n            \"Telefone\": \"34616728\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"16010290\",\n            \"CNPJ\": \"1856688000179\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Araçatuba\",\n            \"Complemento\": null,\n            \"DDD\": \"18\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"uniodontoaracatuba@terra.com.br\",\n            \"Fax\": 31175273,\n            \"Logradouro\": \"RUA GENERAL OSÓRIO\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO ARACATUBA\",\n            \"Numero\": \"310\",\n            \"Razao_Social\": \"UNIODONTO DE ARAÇATUBA COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"362824\",\n            \"Representante\": \"PAULO CEZAR BATAGELO\",\n            \"Telefone\": \"31175271\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"18700160\",\n            \"CNPJ\": \"14922000158\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Avaré\",\n            \"Complemento\": null,\n            \"DDD\": \"14\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodontoavare@uol.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA DISTRITO FEDERAL\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE AVARE\",\n            \"Numero\": \"1001\",\n            \"Razao_Social\": \"UNIODONTO DE AVARE COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"311669\",\n            \"Representante\": \"WALDIR CÉSAR DE SOUZA\",\n            \"Telefone\": \"37322303\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"18600040\",\n            \"CNPJ\": \"1946395000182\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Botucatu\",\n            \"Complemento\": null,\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodontobotu@uol.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA JOAO PASSOS\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO BOTUCATU\",\n            \"Numero\": \"1310\",\n            \"Razao_Social\": \"UNIODONTO DE BOTUCATU COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"347477\",\n            \"Representante\": \"SERGIO HENRIQUE BAUER\",\n            \"Telefone\": null,\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"15800225\",\n            \"CNPJ\": \"855599000145\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Catanduva\",\n            \"Complemento\": null,\n            \"DDD\": \"17\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontocatanduva.com.br\",\n            \"Fax\": 35232516,\n            \"Logradouro\": \"PRAÇA 9 DE JULHO\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE CATANDUVA\",\n            \"Numero\": \"141\",\n            \"Razao_Social\": \"UNIODONTO DE CATANDUVA COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"354686\",\n            \"Representante\": \"JOSÉ EDUARDO HADDAD\",\n            \"Telefone\": \"35232516\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"44001184\",\n            \"CNPJ\": \"16325896000119\",\n            \"Cargo_Representante\": \"DIRETORA PRESIDENTE\",\n            \"Cidade\": \"Feira de Santana\",\n            \"Complemento\": \"2º andar , sala 208 - Edifício Meritum C\",\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"1999-02-13\",\n            \"Endereco_eletronico\": \"uniodontofs@ig.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA CASTRO ALVES\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO FEIRA DE SANTANA\",\n            \"Numero\": \"1511\",\n            \"Razao_Social\": \"UNIODONTO DE FEIRA DE SANTANA - COOPERATIVA DE TRABALHO ODONTOLÓGICO DE FEIRA DE SANTANA RESP LIMITADA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"400556\",\n            \"Representante\": \"CAMILA DOREA FERNANDES SILVA\",\n            \"Telefone\": null,\n            \"UF\": \"BA\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"58013280\",\n            \"CNPJ\": \"12923462000160\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"João Pessoa\",\n            \"Complemento\": null,\n            \"DDD\": \"83\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodontojp@uniodontojp.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV. DUARTE DA SILVEIRA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO JOAO PESSOA\",\n            \"Numero\": \"541\",\n            \"Razao_Social\": \"UNIODONTO DE JOÃO PESSOA COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"361569\",\n            \"Representante\": \"TERTULIANO BRITO NETO\",\n            \"Telefone\": \"21075858\",\n            \"UF\": \"PB\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"15910000\",\n            \"CNPJ\": \"1592738000158\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Monte Alto\",\n            \"Complemento\": null,\n            \"DDD\": \"16\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodontoma@uol.com.br\",\n            \"Fax\": 32432772,\n            \"Logradouro\": \"RUA GUSTAVO DE GODOY\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE MONTE ALTO\",\n            \"Numero\": \"597\",\n            \"Razao_Social\": \"UNIODONTO DE MONTE ALTO COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"336238\",\n            \"Representante\": \"ADRIEN CÉSAR GATO\",\n            \"Telefone\": \"32425776\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"12400190\",\n            \"CNPJ\": \"2064028000118\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Pindamonhangaba\",\n            \"Complemento\": null,\n            \"DDD\": \"12\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodontopinda@uniodontopinda.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"PRAÇA PADRE JOÃO FARIA FIALHO\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO PINDAMONHANGABA\",\n            \"Numero\": \"51\",\n            \"Razao_Social\": \"UNIODONTO DE PINDAMONHANGABA COOP ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"331104\",\n            \"Representante\": \"ACÍLIA APARECIDA CÉSAR LOURENÇO\",\n            \"Telefone\": \"36446000\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"VILA MACHADINHO\",\n            \"CEP\": \"19020120\",\n            \"CNPJ\": \"172586000171\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Presidente Prudente\",\n            \"Complemento\": null,\n            \"DDD\": \"18\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontoprudente.com.br\",\n            \"Fax\": 39017765,\n            \"Logradouro\": \"AVENIDA CORONEL JOSÉ SOARES MARCONDES\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE PRESIDENTE PRUDENTE COOPERATIVA ODONTOLÓGICA\",\n            \"Numero\": \"454\",\n            \"Razao_Social\": \"UNIODONTO DE PRESIDENTE PRUDENTE COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"336017\",\n            \"Representante\": \"EDUARDO MITSUO OTIAI\",\n            \"Telefone\": \"39017764\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"DOM GIOCONDO\",\n            \"CEP\": \"69900303\",\n            \"CNPJ\": \"2948490000188\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Branco\",\n            \"Complemento\": null,\n            \"DDD\": \"68\",\n            \"Data_Registro_ANS\": \"1999-04-28\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontoacre.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV. CEARÁ\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO - AC\",\n            \"Numero\": \"2219\",\n            \"Razao_Social\": \"UNIODONTO DE RIO BRANCO ACRE COOPERATIVA ODONTOLÓGICA LTDA.\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"403997\",\n            \"Representante\": \"EDIANA DE FÁTIMA MELO MAGELA\",\n            \"Telefone\": \"21026500\",\n            \"UF\": \"AC\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13500150\",\n            \"CNPJ\": \"96609292000133\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Claro\",\n            \"Complemento\": \"AVS.3 E 5\",\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodontorc@uniodontorc.com.br\",\n            \"Fax\": 35248738,\n            \"Logradouro\": \"RUA 2\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE RIO CLARO\",\n            \"Numero\": \"918\",\n            \"Razao_Social\": \"UNIODONTO DE RIO CLARO COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"349011\",\n            \"Representante\": \"ROSANGELA DA SILVEIRA FREITAS\",\n            \"Telefone\": \"35246475\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"14160020\",\n            \"CNPJ\": \"826676000139\",\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Sertãozinho\",\n            \"Complemento\": null,\n            \"DDD\": \"1\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontosertaozinho.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA CARLOS GOMES\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE SERTAOZINHO\",\n            \"Numero\": \"684\",\n            \"Razao_Social\": \"UNIODONTO DE SERTAOZINHO SP COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"373109\",\n            \"Representante\": \"APARECIDO SILVIO DE SOUZA \",\n            \"Telefone\": \"621056700\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "busca1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=unimed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "unimed"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=unimed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "unimed"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:26:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15916"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"78280000\",\n            \"CNPJ\": \"70523899000102\",\n            \"Cargo_Representante\": \"DIRETORA PRESIDENTE\",\n            \"Cidade\": \"Mirassol d'Oeste\",\n            \"Complemento\": null,\n            \"DDD\": \"65\",\n            \"Data_Registro_ANS\": \"1998-12-28\",\n            \"Endereco_eletronico\": \"marcia@unimedvaledojauru.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA GERMANO GREVE\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED\",\n            \"Numero\": \"734\",\n            \"Razao_Social\": \"UNIMED VALE DO JAURU COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"370975\",\n            \"Representante\": \"TERESINHA APARECIDA NUNES DA CUNHA \",\n            \"Telefone\": \"32415200\",\n            \"UF\": \"MT\",\n            \"relevance\": 56\n        },\n        {\n            \"Bairro\": \"LOTEAMENTO DO PARQUE\",\n            \"CEP\": \"37750000\",\n            \"CNPJ\": \"86584901000193\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Machado\",\n            \"Complemento\": \"COMPLEXO UNIMED\",\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"gerencia@unimedmachado.coop.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA ANTÔNIO ALKIMIN DA COSTA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED MACHADO\",\n            \"Numero\": \"230\",\n            \"Razao_Social\": \"UNIMED MACHADO COOPERATIVA DE TRABALHO MEDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"354678\",\n            \"Representante\": \"CLÁUDIO DE LIMA ALVES\",\n            \"Telefone\": null,\n            \"UF\": \"MG\",\n            \"relevance\": 52\n        },\n        {\n            \"Bairro\": \"PORTO NOVO\",\n            \"CEP\": \"36660000\",\n            \"CNPJ\": \"71086698000158\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Além Paraíba\",\n            \"Complemento\": null,\n            \"DDD\": \"32\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimedap@unimedalemparaiba.com.br\",\n            \"Fax\": 34662233,\n            \"Logradouro\": \"RUA ADÃO ARAUJO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED ALÉM PARAIBA\",\n            \"Numero\": \"181\",\n            \"Razao_Social\": \"UNIMED ALEM PARAIBA COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"313955\",\n            \"Representante\": \"BRENO MELO FERREIRA COSTA \",\n            \"Telefone\": \"34662233\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"37130000\",\n            \"CNPJ\": \"42946061000196\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Alfenas\",\n            \"Complemento\": null,\n            \"DDD\": \"35\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimed@unimedalfenas.com.br\",\n            \"Fax\": 36981021,\n            \"Logradouro\": \"RUA PRESIDENTE ARTUR BERNARDES\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED ALFENAS\",\n            \"Numero\": \"189\",\n            \"Razao_Social\": \"UNIMED ALFENAS COOPERATIVA DE TRABALHO MEDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"354996\",\n            \"Representante\": \"CLAUDIO LAUDARES MOREIRA\",\n            \"Telefone\": \"37130000\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"SANTA HELENA\",\n            \"CEP\": \"98200000\",\n            \"CNPJ\": \"72234164000194\",\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Ibirubá\",\n            \"Complemento\": null,\n            \"DDD\": \"54\",\n            \"Data_Registro_ANS\": \"1998-12-23\",\n            \"Endereco_eletronico\": \"unimed@unimedaj.com.br\",\n            \"Fax\": 33241462,\n            \"Logradouro\": \"RUA FLORES DA CUNHA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED ALTO JACUÍ\",\n            \"Numero\": \"530\",\n            \"Razao_Social\": \"UNIMED ALTO JACUÍ/RS - COOPERATIVA DE ASSISTÊNCIA À SAÚDE LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"352519\",\n            \"Representante\": \"OROMAR VASCONCELOS SUERTEGARAY\",\n            \"Telefone\": \"33241462\",\n            \"UF\": \"RS\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"38550000\",\n            \"CNPJ\": \"763923000103\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Coromandel\",\n            \"Complemento\": null,\n            \"DDD\": \"34\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimed310gerencia@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA DOMINGOS LACERDA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED ALTO PARANAIBA\",\n            \"Numero\": \"1057\",\n            \"Razao_Social\": \"UNIMED ALTO PARANAIBA COOPERATIVA DE TRABALHO MEDICO\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"341819\",\n            \"Representante\": \"NEFTALI PENA NETO\",\n            \"Telefone\": \"38411620\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"PADRE ALAOR\",\n            \"CEP\": \"38182264\",\n            \"CNPJ\": \"25910449000118\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Araxá\",\n            \"Complemento\": null,\n            \"DDD\": \"34\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimed@unimedaraxa.com.br\",\n            \"Fax\": 36694929,\n            \"Logradouro\": \"AVENIDA JOAO MOREIRA SALLES\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED ARAXÁ\",\n            \"Numero\": \"130\",\n            \"Razao_Social\": \"UNIMED ARAXÁ COOPERATIVA DE TRABALHO MÉDICO LTDA.\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"331651\",\n            \"Representante\": \"RUBENS ASSUNÇÃO DE OLIVEIRA\",\n            \"Telefone\": \"36694900\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"BOA MORTE \",\n            \"CEP\": \"36201001\",\n            \"CNPJ\": \"25810946000144\",\n            \"Cargo_Representante\": \"Diretor Presidente\",\n            \"Cidade\": \"Barbacena\",\n            \"Complemento\": null,\n            \"DDD\": \"32\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimed@unimedbarbacena.coop.br\",\n            \"Fax\": 33393243,\n            \"Logradouro\": \"RUA JÚLIO AUGUSTO DE ARAÚJO \",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED BARBACENA\",\n            \"Numero\": \"224\",\n            \"Razao_Social\": \"UNIMED BARBACENA - COOPERATIVA DE TRABALHO MÉDICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"309087\",\n            \"Representante\": \"BENEDITO DE OLIVEIRA VEIGA \",\n            \"Telefone\": \"33393900\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"58900000\",\n            \"CNPJ\": \"2314168000105\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Cajazeiras\",\n            \"Complemento\": null,\n            \"DDD\": \"83\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"unimedcaj@uol.com.br\",\n            \"Fax\": 35314500,\n            \"Logradouro\": \"SABINO ASSIS\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CAJAZEIRAS - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Numero\": \"125\",\n            \"Razao_Social\": \"UNIMED CAJAZEIRAS - SOCIEDADE COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"344141\",\n            \"Representante\": \"FRANCISCO XAVIER DE FREITAS PEREIRA\",\n            \"Telefone\": \"35314222\",\n            \"UF\": \"PB\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"LAURITZEN\",\n            \"CEP\": \"58401393\",\n            \"CNPJ\": \"8707473000135\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Campina Grande\",\n            \"Complemento\": null,\n            \"DDD\": \"83\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"unimed@unimed.campinagrande.br\",\n            \"Fax\": 33106538,\n            \"Logradouro\": \"RUA CLAYTON ISMAEL\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CAMPINA GRANDE\",\n            \"Numero\": \"40\",\n            \"Razao_Social\": \"UNIMED CAMPINA GRANDE - COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"367397\",\n            \"Representante\": \"FRANCISCO VIEIRA DE OLIVEIRA\",\n            \"Telefone\": \"21016500\",\n            \"UF\": \"PB\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"37270000\",\n            \"CNPJ\": \"42939207000176\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Campo Belo\",\n            \"Complemento\": null,\n            \"DDD\": \"35\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimedcb@unimedcampobelo.coop.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA JOÃO PINHEIRO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CAMPO BELO- COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Numero\": \"342\",\n            \"Razao_Social\": \"UNIMED CAMPO BELO- COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"367613\",\n            \"Representante\": \"AGUINALDO CAMILO DE ANDRADE\",\n            \"Telefone\": \"38318050\",\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"DÁRIO GROSSI\",\n            \"CEP\": \"35300004\",\n            \"CNPJ\": \"26368613000170\",\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Caratinga\",\n            \"Complemento\": \"e 36\",\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimedcaratinga@unimedcaratinga.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"PRAÇA CALÓGERAS\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CARATINGA - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Numero\": \"30\",\n            \"Razao_Social\": \"UNIMED CARATINGA - COOPERATIVA DE TRABALHO MÉDICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"347736\",\n            \"Representante\": \"JOSÉ NELSON SIMIQUEL CORREA MOURA\",\n            \"Telefone\": null,\n            \"UF\": \"MG\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"16901200\",\n            \"CNPJ\": \"2687852000124\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Andradina\",\n            \"Complemento\": \"JARDIM SANTO ANTÔNIO\",\n            \"DDD\": \"18\",\n            \"Data_Registro_ANS\": \"1998-12-22\",\n            \"Endereco_eletronico\": \"unimed@unimedandradina.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA CUIABA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE ANDRADINA COOPERATIVA DE TRABALHO MEDICO\",\n            \"Numero\": \"896\",\n            \"Razao_Social\": \"UNIMED DE ANDRADINA - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"303844\",\n            \"Representante\": \"PAULO PEREIRA ASSIS\",\n            \"Telefone\": \"37024000\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"ALTO\",\n            \"CEP\": \"18708005\",\n            \"CNPJ\": \"50368034000101\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Avaré\",\n            \"Complemento\": null,\n            \"DDD\": \"14\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimed@unimedavare.coop.br\",\n            \"Fax\": 37117068,\n            \"Logradouro\": \"RUA SANTA CATARINA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE AVARÉ\",\n            \"Numero\": \"1981\",\n            \"Razao_Social\": \"UNIMED DE AVARÉ COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"304123\",\n            \"Representante\": \"NILTON JOSÉ GONÇALVES\",\n            \"Telefone\": \"37117016\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"14780060\",\n            \"CNPJ\": \"71925531000133\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Barretos\",\n            \"Complemento\": null,\n            \"DDD\": \"17\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimedbarretos@unimedbarretos.com.br\",\n            \"Fax\": 33210400,\n            \"Logradouro\": \"RUA DEZOITO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE BARRETOS\",\n            \"Numero\": \"275\",\n            \"Razao_Social\": \"UNIMED DE BARRETOS COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"347108\",\n            \"Representante\": \"JOSÉ EBERLE MARTINS FILHO\",\n            \"Telefone\": \"33210400\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"14300000\",\n            \"CNPJ\": \"52657079000121\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Batatais\",\n            \"Complemento\": null,\n            \"DDD\": \"16\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimed@unimedbatatais.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA DR MANOEL FURTADO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE BATATAIS\",\n            \"Numero\": \"300\",\n            \"Razao_Social\": \"UNIMED DE BATATAIS - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"313149\",\n            \"Representante\": \"ANDRE DOMINGOS PIPPA TOMAZELLA\",\n            \"Telefone\": \"37618600\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"16200005\",\n            \"CNPJ\": \"65732836000126\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Birigui\",\n            \"Complemento\": \"76\",\n            \"DDD\": \"18\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimed@unimedbirigui.com.br\",\n            \"Fax\": 36425799,\n            \"Logradouro\": \"RUA SAUDADES\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE BIRIGUI\",\n            \"Numero\": \"32\",\n            \"Razao_Social\": \"UNIMED DE BIRIGUI - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"345776\",\n            \"Representante\": \"ELIAS ANTONIO NETO\",\n            \"Telefone\": \"36497062\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"18600140\",\n            \"CNPJ\": \"45425899000122\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Botucatu\",\n            \"Complemento\": null,\n            \"DDD\": \"14\",\n            \"Data_Registro_ANS\": \"1998-12-28\",\n            \"Endereco_eletronico\": \"unimed@unimedbotucatu.coop.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA MAJOR LEÔNIDAS CARDOSO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED BOTUCATU\",\n            \"Numero\": \"43\",\n            \"Razao_Social\": \"UNIMED DE BOTUCATU COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"304883\",\n            \"Representante\": \"NOÉ LUIZ MENDES DE MARCHI\",\n            \"Telefone\": \"38114500\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13360000\",\n            \"CNPJ\": \"59499251000105\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Capivari\",\n            \"Complemento\": null,\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimedcapivari@unimedcapivari.com.br\",\n            \"Fax\": 34913554,\n            \"Logradouro\": \"PRAÇA DR. CEZÁRIO MOTTA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE CAPIVARI\",\n            \"Numero\": \"484\",\n            \"Razao_Social\": \"UNIMED DE CAPIVARI -COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"366340\",\n            \"Representante\": \"LUIZ ANTÔNIO BERETA\",\n            \"Telefone\": \"34913554\",\n            \"UF\": \"SP\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"CEARÁ\",\n            \"CEP\": \"88815180\",\n            \"CNPJ\": \"82996703000186\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Criciúma\",\n            \"Complemento\": null,\n            \"DDD\": \"48\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"unimed@criciuma.unimedsc.com.br\",\n            \"Fax\": 34315900,\n            \"Logradouro\": \"RUA ESTEVAO EMILIO DE SOUZA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CRICIÚMA\",\n            \"Numero\": \"201\",\n            \"Razao_Social\": \"UNIMED DE CRICIÚMA COOPERATIVA DE TRABALHO MÉDICO DA REGIÃO CARBONÍFERA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"329339\",\n            \"Representante\": \"LEANDRO AVANY NUNES\",\n            \"Telefone\": \"34315900\",\n            \"UF\": \"SC\",\n            \"relevance\": 49\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "busca6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=@gmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "@gmail"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=@gmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "@gmail"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:27:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15577"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"VILA ROMANA\",\n            \"CEP\": \"5049000\",\n            \"CNPJ\": \"22869997000153\",\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADORA\",\n            \"Cidade\": \"São Paulo\",\n            \"Complemento\": \"SALA 126\",\n            \"DDD\": \"11\",\n            \"Data_Registro_ANS\": \"2019-06-13\",\n            \"Endereco_eletronico\": \"labmarisol@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA CATÃO\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": null,\n            \"Numero\": \"128\",\n            \"Razao_Social\": \"2B ODONTOLOGIA OPERADORA DE PLANOS ODONTOLÓGICOS LTDA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": \"421545\",\n            \"Representante\": \"MARISOL BECHELLI\",\n            \"Telefone\": \"34415852\",\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"JARDIM BONFIGLIOLI\",\n            \"CEP\": \"13207280\",\n            \"CNPJ\": \"41788751000100\",\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Jundiaí\",\n            \"Complemento\": \"SALA 6\",\n            \"DDD\": \"11\",\n            \"Data_Registro_ANS\": \"2021-07-12\",\n            \"Endereco_eletronico\": \"pietrorocchi37@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA ITÁLIA\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"3S ADMINISTRADORA DE BENEFICIOS\",\n            \"Numero\": \"33\",\n            \"Razao_Social\": \"3S ADMINISTRADORA DE BENEFICIOS LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"422908\",\n            \"Representante\": \"ANAMELIA MONTEIRO GUERRA ROCCHI\",\n            \"Telefone\": \"42263247\",\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"PEIXINHOS\",\n            \"CEP\": \"53230971\",\n            \"CNPJ\": \"57522360000170\",\n            \"Cargo_Representante\": \"ADMINISTRADOR\",\n            \"Cidade\": \"Olinda\",\n            \"Complemento\": \"BLOCO D\",\n            \"DDD\": \"81\",\n            \"Data_Registro_ANS\": \"2024-12-16\",\n            \"Endereco_eletronico\": \"jjppcc@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"AVENIDA PRESIDENTE KENNEDY\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"AIRES OPERADORA DE SAUDE \",\n            \"Numero\": \"1001.0\",\n            \"Razao_Social\": \"AIRES OPERADORA DE SAUDE LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"424285\",\n            \"Representante\": \"JOSE PEREIRA DA COSTA\",\n            \"Telefone\": \"992463135\",\n            \"UF\": \"PE\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"SAO JOAO\",\n            \"CEP\": \"16025050\",\n            \"CNPJ\": \"6258813000162\",\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Araçatuba\",\n            \"Complemento\": null,\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"2009-07-03\",\n            \"Endereco_eletronico\": \"reginaldo.alcancesaude@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA CUSSY DE ALMEIDA JUNIOR\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"ALCANCE SAÚDE\",\n            \"Numero\": \"1931\",\n            \"Razao_Social\": \"ALCANCE SAÚDE LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"416975\",\n            \"Representante\": \"VALDECIR DONIZETE LOCATELLI\",\n            \"Telefone\": null,\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"30411023\",\n            \"CNPJ\": \"43047552000168\",\n            \"Cargo_Representante\": \"SOCIO ADMINISTRADOR \",\n            \"Cidade\": \"Betim\",\n            \"Complemento\": \"SALA 201\",\n            \"DDD\": \"31\",\n            \"Data_Registro_ANS\": \"2023-11-14\",\n            \"Endereco_eletronico\": \"amaral.diego@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA INCONFIDÊNCIA \",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"VYDA SAUDE\",\n            \"Numero\": \"488\",\n            \"Razao_Social\": \"AMPLITUDE PLANOS DE SAUDE LTDA \",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"423858\",\n            \"Representante\": \"DIEGO ALVES AMARAL \",\n            \"Telefone\": \"39235406\",\n            \"UF\": \"MG\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"Bom Retiro\",\n            \"CEP\": \"1132000\",\n            \"CNPJ\": \"41715325000138\",\n            \"Cargo_Representante\": \"Presidente\",\n            \"Cidade\": \"São Paulo\",\n            \"Complemento\": null,\n            \"DDD\": \"11\",\n            \"Data_Registro_ANS\": \"2021-08-11\",\n            \"Endereco_eletronico\": \"paralegalarl@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Rua Visconde de Taunay\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"ARL ADMINISTRADORA DE BENEFÍCIOS\",\n            \"Numero\": \"601.0\",\n            \"Razao_Social\": \"ARL ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 2,\n            \"Registro_ANS\": \"422941\",\n            \"Representante\": \"ALVARO ANTÔNIO REGIS LEMOS\",\n            \"Telefone\": \"32252193\",\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"Iputinga\",\n            \"CEP\": \"50670260\",\n            \"CNPJ\": \"47325263000134\",\n            \"Cargo_Representante\": \"presidente\",\n            \"Cidade\": \"Recife\",\n            \"Complemento\": \"Sala 11\",\n            \"DDD\": \"81\",\n            \"Data_Registro_ANS\": \"2022-12-27\",\n            \"Endereco_eletronico\": \"adufepesaude@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Rua Bom Pastor\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"ADUFEPE SAÚDE\",\n            \"Numero\": \"430.0\",\n            \"Razao_Social\": \"ASSOC DE ASSIST À SAÚDE DOS SERV DAS UNIV E INST FED, EST E/OU FAC PART EM PE\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"423432\",\n            \"Representante\": \"JOSÉ CRISTOVAM MARTINS VIEIRA \",\n            \"Telefone\": \"86903080\",\n            \"UF\": \"PE\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"Nossa Senhora Aparecida\",\n            \"CEP\": \"13880000\",\n            \"CNPJ\": \"30724638000136\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Vargem Grande do Sul\",\n            \"Complemento\": \"Sala 01\",\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"2019-04-08\",\n            \"Endereco_eletronico\": \"associacaohsvgsul@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Praça Nossa Senhora Aparecida\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"HOSPITAL SAÚDE\",\n            \"Numero\": \"61\",\n            \"Razao_Social\": \"ASSOCIAÇÃO HOSPITAL SAÚDE DE VARGEM GRANDE DO SUL\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"421618\",\n            \"Representante\": \"JOSÉ GERALDO RAMAZOTTI\",\n            \"Telefone\": \"36419300\",\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"Brasília\",\n            \"CEP\": \"44088180\",\n            \"CNPJ\": \"45050963000138\",\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Feira de Santana\",\n            \"Complemento\": \"Sala 03\",\n            \"DDD\": \"71\",\n            \"Data_Registro_ANS\": \"2022-03-22\",\n            \"Endereco_eletronico\": \"bemstarhealth@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Rua Monsenhor Aderbal Miranda\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"BEMSTAR\",\n            \"Numero\": \"875\",\n            \"Razao_Social\": \"BEMSTAR ASSISTENCIA MEDICA LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"423181\",\n            \"Representante\": \"FRANCISCO GOMES DA FONSECA FILHO\",\n            \"Telefone\": \"41041808\",\n            \"UF\": \"BA\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"FERNANDES PINHEIRO\",\n            \"CEP\": \"25870000\",\n            \"CNPJ\": \"50436148000141\",\n            \"Cargo_Representante\": \"ASSESSORA\",\n            \"Cidade\": \"Comendador Levy Gasparian\",\n            \"Complemento\": \"***\",\n            \"DDD\": \"24\",\n            \"Data_Registro_ANS\": \"2024-07-30\",\n            \"Endereco_eletronico\": \"vanicebastos@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA A PROJETADA\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"******\",\n            \"Numero\": \"11\",\n            \"Razao_Social\": \"BENEFIT BENEFICIOS LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"423891\",\n            \"Representante\": \"JANAINA LOURENCO ESTEVAO\",\n            \"Telefone\": \"22521407\",\n            \"UF\": \"RJ\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"PRAIA DO CANTO\",\n            \"CEP\": \"29055540\",\n            \"CNPJ\": \"32421708000102\",\n            \"Cargo_Representante\": \"Administrador\",\n            \"Cidade\": \"Vitória\",\n            \"Complemento\": \"1º PAVIMENTO\",\n            \"DDD\": \"27\",\n            \"Data_Registro_ANS\": \"2019-09-02\",\n            \"Endereco_eletronico\": \"jumarcanedo@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"AVENIDA SATURNINO DE BRITO \",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"BEST SAÚDE\",\n            \"Numero\": \"1350\",\n            \"Razao_Social\": \"BEST SENIOR OPERADORA DE SAÚDE LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"421766\",\n            \"Representante\": \"JUMAR CANEDO DE ALMEIDA\",\n            \"Telefone\": \"998660566\",\n            \"UF\": \"ES\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"1050070\",\n            \"CNPJ\": \"34673588000166\",\n            \"Cargo_Representante\": \"sócio administrador\",\n            \"Cidade\": \"São Paulo\",\n            \"Complemento\": \"701 A\",\n            \"DDD\": \"11\",\n            \"Data_Registro_ANS\": \"2021-01-13\",\n            \"Endereco_eletronico\": \"falconeseg@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA ÁLVARO DE CARVALHO\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"BIT LIFE \",\n            \"Numero\": \"22\",\n            \"Razao_Social\": \"BIT LIFE BENEFÍCIOS LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"422401\",\n            \"Representante\": \"IVO MARCOS FALCONE\",\n            \"Telefone\": \"32592147\",\n            \"UF\": \"SP\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"PLANO DIRETOR SUL\",\n            \"CEP\": \"77016338\",\n            \"CNPJ\": \"31596055000130\",\n            \"Cargo_Representante\": \"SÓCIO-ADMINISTRADOR\",\n            \"Cidade\": \"Palmas\",\n            \"Complemento\": null,\n            \"DDD\": \"63\",\n            \"Data_Registro_ANS\": \"2019-04-05\",\n            \"Endereco_eletronico\": \"brasilodonto.adm@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Q.603 SUL AVENIDA LO 13\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"BRASIL ODONTO PLANO DE SAUDE\",\n            \"Numero\": \"13\",\n            \"Razao_Social\": \"BRASIL ODONTO OPERADORA DE PLANOS ODONTOLÓGICOS LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"421561\",\n            \"Representante\": \"EDUARDO NASCIMENTO DE OLIVEIRA\",\n            \"Telefone\": \"999629224\",\n            \"UF\": \"TO\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"63260000\",\n            \"CNPJ\": \"5455431000166\",\n            \"Cargo_Representante\": \"DIRETOR ADMINISTRATIVO\",\n            \"Cidade\": \"Brejo Santo\",\n            \"Complemento\": null,\n            \"DDD\": \"88\",\n            \"Data_Registro_ANS\": \"1999-01-04\",\n            \"Endereco_eletronico\": \"csnsf1@gmail.com\",\n            \"Fax\": 35310997,\n            \"Logradouro\": \"R MANOEL INACIO BEZERRA\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"CASA DE SAÚDE NOSSA SENHORA DE FÁTIMA .\",\n            \"Numero\": \"89\",\n            \"Razao_Social\": \"CASA DE SAÚDE NOSSA SENHORA DE FÁTIMA  LTDA.\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"327328\",\n            \"Representante\": \"EDMILSON COSTA  MEDEIRO\",\n            \"Telefone\": \"35310460\",\n            \"UF\": \"CE\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"24020125\",\n            \"CNPJ\": \"38046343000160\",\n            \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n            \"Cidade\": \"Niterói\",\n            \"Complemento\": \"AP 304\",\n            \"DDD\": \"21\",\n            \"Data_Registro_ANS\": \"2021-02-09\",\n            \"Endereco_eletronico\": \"carlaoliveira1986@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA QUINZE DE NOVEMBRO\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"AMESAÚDE\",\n            \"Numero\": \"228\",\n            \"Razao_Social\": \"CLUBE SILVER ADMINISTRADORA DE PLANOS DE SAUDE LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"422461\",\n            \"Representante\": \"CARLA NAZARÉ OLIVEIRA DOS SANTOS\",\n            \"Telefone\": \"35531692\",\n            \"UF\": \"RJ\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"45600120\",\n            \"CNPJ\": \"491998000174\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Itabuna\",\n            \"Complemento\": \"1º ANDAR\",\n            \"DDD\": \"7\",\n            \"Data_Registro_ANS\": \"1999-03-12\",\n            \"Endereco_eletronico\": \"uniodontoitb@gmail.com\",\n            \"Fax\": 36134760,\n            \"Logradouro\": \"RUA MARIÁ FERREIRA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO ITABUNA\",\n            \"Numero\": \"245\",\n            \"Razao_Social\": \"COOPERATIVA ODONTOLÓGICA REGIÃO SUL DA BAHIA - UNIODONTO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"402010\",\n            \"Representante\": \"MARIO AUGUSTO DIAS BRUM\",\n            \"Telefone\": \"336134760\",\n            \"UF\": \"BA\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"VILA MOEMA\",\n            \"CEP\": \"88705091\",\n            \"CNPJ\": \"33803129000197\",\n            \"Cargo_Representante\": \"SÓCIA-ADMINISTRADORA\",\n            \"Cidade\": \"Tubarão\",\n            \"Complemento\": \"SALA 13\",\n            \"DDD\": \"48\",\n            \"Data_Registro_ANS\": \"2019-12-03\",\n            \"Endereco_eletronico\": \"crzdental@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"AVENIDA RODOVALHO\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"CRUZ DENTAL\",\n            \"Numero\": \"722\",\n            \"Razao_Social\": \"CRZ PLANO ODONTOLÓGICO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"421952\",\n            \"Representante\": \"DANIELE NIEHUES CRUZ\",\n            \"Telefone\": \"31910205\",\n            \"UF\": \"SC\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"Centro\",\n            \"CEP\": \"86870000\",\n            \"CNPJ\": \"47058412000146\",\n            \"Cargo_Representante\": \"Sócio-Administrador\",\n            \"Cidade\": \"Ivaiporã\",\n            \"Complemento\": \"Sala 115\",\n            \"DDD\": \"43\",\n            \"Data_Registro_ANS\": \"2023-08-07\",\n            \"Endereco_eletronico\": \"dr.diaplanos@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"Avenida Paraná\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"DR DIA PLANOS ODONTOLOGICOS E SAUDE LTDA\",\n            \"Numero\": \"130\",\n            \"Razao_Social\": \"DR DIA PLANOS ODONTOLOGICOS E SAUDE LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"423653\",\n            \"Representante\": \"REGINALDO JOSÉ DA SILVA\",\n            \"Telefone\": \"43999351808\",\n            \"UF\": \"PR\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"CEILANDIA\",\n            \"CEP\": \"72215178\",\n            \"CNPJ\": \"37442364000131\",\n            \"Cargo_Representante\": \"Administradora \",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": null,\n            \"DDD\": \"61\",\n            \"Data_Registro_ANS\": \"2021-03-26\",\n            \"Endereco_eletronico\": \"saudebrasilia2@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"QNM 17, CONJUNTO H, LOTE 28, SALA 201\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"ESPLENDOR ADMINISTRADORA DE BENEFÍCIOS  \",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"ESPLENDOR ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": \"422576\",\n            \"Representante\": \"EDILAMAR LIMA DA SILVA\",\n            \"Telefone\": \"982080903\",\n            \"UF\": \"DF\",\n            \"relevance\": 5\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": \"70070040\",\n            \"CNPJ\": \"49754083000101\",\n            \"Cargo_Representante\": \"DIRETORA ADMINISTRATIVA E\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO A,SALA 1101\",\n            \"DDD\": \"61\",\n            \"Data_Registro_ANS\": \"2023-09-12\",\n            \"Endereco_eletronico\": \"salgado.brunna@gmail.com\",\n            \"Fax\": null,\n            \"Logradouro\": \"QUADRA SAUS - QUADRA 4\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"EVO SAÚDE\",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"EVO SAUDE ASSISTENCIA MEDICA LTDA\",\n            \"Regiao_de_Comercializacao\": null,\n            \"Registro_ANS\": \"423700\",\n            \"Representante\": \"BRUNNA CERQUEIRA SALGADO LIMA\",\n            \"Telefone\": \"982730004\",\n            \"UF\": \"DF\",\n            \"relevance\": 5\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "busca3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=rio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "rio"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=rio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "rio"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:27:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16025"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"BARRA DA TIJUCA\",\n            \"CEP\": \"22775003\",\n            \"CNPJ\": \"42163881000101\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Rio de Janeiro\",\n            \"Complemento\": \"BL 01, SL 404/408, BL 03, SL 101/109, SS\",\n            \"DDD\": \"21\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"controlad@unimedrio.com.br\",\n            \"Fax\": 31397893,\n            \"Logradouro\": \"AV. AYRTON SENNA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO COOPERATIVA DE TRABALHO MEDICO DO RJ LTDA\",\n            \"Numero\": \"2500\",\n            \"Razao_Social\": \"UNIMED-RIO COOPERATIVA DE TRABALHO MEDICO DO RIO DE JANEIRO\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": \"393321\",\n            \"Representante\": \"DENISE DE ABREU DURÃO\",\n            \"Telefone\": \"31397999\",\n            \"UF\": \"RJ\",\n            \"relevance\": 49\n        },\n        {\n            \"Bairro\": \"Centro\",\n            \"CEP\": \"29900210\",\n            \"CNPJ\": \"29910807000143\",\n            \"Cargo_Representante\": \"Presidente\",\n            \"Cidade\": \"Linhares\",\n            \"Complemento\": null,\n            \"DDD\": \"27\",\n            \"Data_Registro_ANS\": \"2018-08-15\",\n            \"Endereco_eletronico\": \"assessoria@riodocesaude.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"Avenida Presidente Vargas\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"RIO DOCE SAÚDE\",\n            \"Numero\": \"1198\",\n            \"Razao_Social\": \"RIO DOCE SAÚDE\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"421359\",\n            \"Representante\": \"DALZISO ANTONIO ARMANI\",\n            \"Telefone\": \"21031750\",\n            \"UF\": \"ES\",\n            \"relevance\": 47\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"28905000\",\n            \"CNPJ\": \"27626696000112\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Cabo Frio\",\n            \"Complemento\": \"LOJA 01\",\n            \"DDD\": \"22\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"comunicacao@unimedcabofrio.coop.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV. JULIA KUBITSCHEK\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED CABO FRIO\",\n            \"Numero\": \"35\",\n            \"Razao_Social\": \"UNIMED CABO FRIO COOPERATIVA TRABALHO MÉDICO LTDA.\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"323357\",\n            \"Representante\": \"JOSÉ MARCOS BARROSO PILLAR\",\n            \"Telefone\": \"26478080\",\n            \"UF\": \"RJ\",\n            \"relevance\": 45\n        },\n        {\n            \"Bairro\": \"JD. AEROPORTO\",\n            \"CEP\": \"13720000\",\n            \"CNPJ\": \"96182068000108\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"São José do Rio Pardo\",\n            \"Complemento\": \"ANEXO II\",\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-22\",\n            \"Endereco_eletronico\": \"contabilidade@unimedriopardo.coop.br\",\n            \"Fax\": 36829500,\n            \"Logradouro\": \"RUA ALEXANDRE CARLOS DE MELO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE SAO JOSÉ DO RIO PARDO\",\n            \"Numero\": \"118\",\n            \"Razao_Social\": \"UNIMED DE SAO JOSÉ DO RIO PARDO-COOP. DE TRAB. MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"354619\",\n            \"Representante\": \"RAY ALVES DOS SANTOS\",\n            \"Telefone\": \"36829500\",\n            \"UF\": \"SP\",\n            \"relevance\": 45\n        },\n        {\n            \"Bairro\": \"VILA IMPERIAL\",\n            \"CEP\": \"15015700\",\n            \"CNPJ\": \"45100138000109\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"São José do Rio Preto\",\n            \"Complemento\": null,\n            \"DDD\": \"17\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"regulacao@unimedriopreto.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV BADY BASSITT\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED SAO JOSÉ DO RIO PRETO\",\n            \"Numero\": \"3877\",\n            \"Razao_Social\": \"UNIMED SAO JOSÉ DO RIO PRETO - COOP. DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"335100\",\n            \"Representante\": \"MARCELO LUCIO DE LIMA \",\n            \"Telefone\": \"32021111\",\n            \"UF\": \"SP\",\n            \"relevance\": 45\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"25804130\",\n            \"CNPJ\": \"2418863000109\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Três Rios\",\n            \"Complemento\": \"SALA 315 E 316\",\n            \"DDD\": \"24\",\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"uniodontotresrios@yahoo.com.br\",\n            \"Fax\": 22553338,\n            \"Logradouro\": \"TRAVESSA AUGUSTO DE ALMEIDA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO TRÊS RIOS\",\n            \"Numero\": \"44\",\n            \"Razao_Social\": \"UNIODONTO DE TRÊS RIOS - COOPERATIVA DE TRABALHO ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"359726\",\n            \"Representante\": \"MARISOL GUIMARÃES MACHADO PEREIRA\",\n            \"Telefone\": \"22553338\",\n            \"UF\": \"RJ\",\n            \"relevance\": 45\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13500391\",\n            \"CNPJ\": \"44663631000166\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Rio Claro\",\n            \"Complemento\": null,\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"contato.ans@unimedrc.com.br\",\n            \"Fax\": 35266734,\n            \"Logradouro\": \"AVENIDA TRÊS\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED DE RIO CLARO SP\",\n            \"Numero\": \"654\",\n            \"Razao_Social\": \"UNIMED DE RIO CLARO SP COOPERATIVA DE TRABALHO MEDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"306126\",\n            \"Representante\": \"JOSÉ MARTINIANO GRILLO NETO\",\n            \"Telefone\": \"35266712\",\n            \"UF\": \"SP\",\n            \"relevance\": 44\n        },\n        {\n            \"Bairro\": \"BOSQUE\",\n            \"CEP\": \"69908330\",\n            \"CNPJ\": \"84313741000112\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Branco\",\n            \"Complemento\": null,\n            \"DDD\": \"68\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"crd.ans@unimedrb.com.br\",\n            \"Fax\": 21064545,\n            \"Logradouro\": \"RUA JOSÉ DE MELO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO BRANCO COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Numero\": \"418\",\n            \"Razao_Social\": \"UNIMED RIO BRANCO COOPERATIVA DE TRABALHO MEDICO LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"337871\",\n            \"Representante\": \"MARCUS VINICIUS SHOITI YOMURA\",\n            \"Telefone\": \"21064546\",\n            \"UF\": \"AC\",\n            \"relevance\": 44\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"75901050\",\n            \"CNPJ\": \"37275625000176\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Verde\",\n            \"Complemento\": null,\n            \"DDD\": \"64\",\n            \"Data_Registro_ANS\": \"1998-12-24\",\n            \"Endereco_eletronico\": \"juridico@unimedrv.com.br\",\n            \"Fax\": 21014900,\n            \"Logradouro\": \"RUA COSTA GOMES\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO VERDE\",\n            \"Numero\": \"208\",\n            \"Razao_Social\": \"UNIMED RIO VERDE COOPERATIVA TRABALHO MEDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"320251\",\n            \"Representante\": \"MARCIO EMRICH CAMPOS\",\n            \"Telefone\": \"21014967\",\n            \"UF\": \"GO\",\n            \"relevance\": 44\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13500150\",\n            \"CNPJ\": \"96609292000133\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Rio Claro\",\n            \"Complemento\": \"AVS.3 E 5\",\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-17\",\n            \"Endereco_eletronico\": \"uniodontorc@uniodontorc.com.br\",\n            \"Fax\": 35248738,\n            \"Logradouro\": \"RUA 2\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO DE RIO CLARO\",\n            \"Numero\": \"918\",\n            \"Razao_Social\": \"UNIODONTO DE RIO CLARO COOPERATIVA ODONTOLOGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"349011\",\n            \"Representante\": \"ROSANGELA DA SILVEIRA FREITAS\",\n            \"Telefone\": \"35246475\",\n            \"UF\": \"SP\",\n            \"relevance\": 44\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13720000\",\n            \"CNPJ\": \"59901454000186\",\n            \"Cargo_Representante\": \"PROVEDOR\",\n            \"Cidade\": \"São José do Rio Pardo\",\n            \"Complemento\": null,\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-31\",\n            \"Endereco_eletronico\": \"adm@savisa.com.br\",\n            \"Fax\": 36082000,\n            \"Logradouro\": \"RUA CEL ALIPIO DIAS\",\n            \"Modalidade\": \"Filantropia\",\n            \"Nome_Fantasia\": \"SANTA CASA DE MISERICORDIA DE SÃO JOSÉ DO RIO PARDO - HOSPITAL S\",\n            \"Numero\": \"620\",\n            \"Razao_Social\": \"SANTA CASA DE MISERICORDIA DE SÃO JOSÉ DO RIO PARDO - HOSPITAL SÃO VICENTE\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"353264\",\n            \"Representante\": \"EDSON ROBERTO FURLAN\",\n            \"Telefone\": \"36084000\",\n            \"UF\": \"SP\",\n            \"relevance\": 40\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"25804030\",\n            \"CNPJ\": \"946953000147\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Três Rios\",\n            \"Complemento\": null,\n            \"DDD\": \"24\",\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"regulacao@unimedtr.coop.br\",\n            \"Fax\": 22516261,\n            \"Logradouro\": \"RUA DR BERNARDO BELLO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED TRÊS RIOS\",\n            \"Numero\": \"63\",\n            \"Razao_Social\": \"UNIMED TRÊS RIOS COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"337498\",\n            \"Representante\": \"FABIO NASSER MONNERAT\",\n            \"Telefone\": \"22516262\",\n            \"UF\": \"RJ\",\n            \"relevance\": 40\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"13720000\",\n            \"CNPJ\": \"1221295000199\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"São José do Rio Pardo\",\n            \"Complemento\": null,\n            \"DDD\": \"19\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"financeiro@uniodontosjrpardo.com.br\",\n            \"Fax\": 36814229,\n            \"Logradouro\": \"AVENIDA INDEPENDÊNCIA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO SÃO JOSÉ DO RIO PARDO\",\n            \"Numero\": \"05\",\n            \"Razao_Social\": \"UNIODONTO DE SAO JOSE DO RIO PARDO - COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"378682\",\n            \"Representante\": \"ADRIANO CALSONE\",\n            \"Telefone\": \"36816729\",\n            \"UF\": \"SP\",\n            \"relevance\": 40\n        },\n        {\n            \"Bairro\": \"SAÚDE\",\n            \"CEP\": \"13500010\",\n            \"CNPJ\": \"56384183000140\",\n            \"Cargo_Representante\": \"PROVEDOR\",\n            \"Cidade\": \"Rio Claro\",\n            \"Complemento\": null,\n            \"DDD\": null,\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"plano@santacasaderioclaro.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA 2\",\n            \"Modalidade\": \"Filantropia\",\n            \"Nome_Fantasia\": null,\n            \"Numero\": \"297\",\n            \"Razao_Social\": \"IRMANDADE DA SANTA CASA DE MISERICÓRDIA DE RIO CLARO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"347655\",\n            \"Representante\": \"DANÚSIO ANTÔNIO DINIZ\",\n            \"Telefone\": null,\n            \"UF\": \"SP\",\n            \"relevance\": 34\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"96200350\",\n            \"CNPJ\": \"2662309000172\",\n            \"Cargo_Representante\": \"SUPERINTENDENTE\",\n            \"Cidade\": \"Rio Grande\",\n            \"Complemento\": null,\n            \"DDD\": \"53\",\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"uniodonto@uniodontoriogrande.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"RUA LUIZ LOREA\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": null,\n            \"Numero\": \"263\",\n            \"Razao_Social\": \"UNIODONTO RIO GRANDE-LITORAL COOPERATIVA ODONTOLOGICA LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": \"367966\",\n            \"Representante\": \"DANIELI DUVAL PINTO DEVILLA\",\n            \"Telefone\": \"32321563\",\n            \"UF\": \"RS\",\n            \"relevance\": 34\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"95020181\",\n            \"CNPJ\": \"88645403000139\",\n            \"Cargo_Representante\": \"DIRETOR GERAL\",\n            \"Cidade\": \"Caxias do Sul\",\n            \"Complemento\": null,\n            \"DDD\": \"54\",\n            \"Data_Registro_ANS\": \"1998-12-24\",\n            \"Endereco_eletronico\": \"regulacaoprodutos@circulosaude.com.br\",\n            \"Fax\": 542233491,\n            \"Logradouro\": \"RUA VISCONDE DE PELOTAS\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"CIRCULO OPERARIO CAXIENSE\",\n            \"Numero\": \"809\",\n            \"Razao_Social\": \"CIRCULO OPERARIO CAXIENSE\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"310247\",\n            \"Representante\": \"ALESSANDRO DANIEL CAVAGNOLLI\",\n            \"Telefone\": \"21010000\",\n            \"UF\": \"RS\",\n            \"relevance\": 30\n        },\n        {\n            \"Bairro\": \"FARROUPILHA\",\n            \"CEP\": \"90040180\",\n            \"CNPJ\": \"87158507000156\",\n            \"Cargo_Representante\": \"REPRESENTANTE JUNTO A ANS\",\n            \"Cidade\": \"Porto Alegre\",\n            \"Complemento\": null,\n            \"DDD\": \"5\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"unimedrs@unimedrs.com.br\",\n            \"Fax\": 133303085,\n            \"Logradouro\": \"RUA SANTA TEREZINHA\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED RIO GRANDE DO SUL\",\n            \"Numero\": \"340\",\n            \"Razao_Social\": \"COOPERATIVA CENTRAL UNIMED DE COOPERATIVAS DE ASSISTÊNCIA À SAÚDE DO RIO GRANDE DO SUL LTDA.\",\n            \"Regiao_de_Comercializacao\": 3,\n            \"Registro_ANS\": \"367087\",\n            \"Representante\": \"PAULO ROBERTO DE OLIVEIRA WEBSTER\",\n            \"Telefone\": \"132011370\",\n            \"UF\": \"RS\",\n            \"relevance\": 30\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"95900000\",\n            \"CNPJ\": \"87303772000180\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Lajeado\",\n            \"Complemento\": \"SALA 204\",\n            \"DDD\": \"5\",\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"admsc@uniodontovtrp.com.br\",\n            \"Fax\": null,\n            \"Logradouro\": \"AV. JÚLIO DE CASTILHOS\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO COOP ODONT VALE TAQUARI E RIO PARDO LTDA\",\n            \"Numero\": \"745\",\n            \"Razao_Social\": \"UNIODONTO COOP ODONT VALE TAQUARI E RIO PARDO LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"353752\",\n            \"Representante\": \"DITMAR ARY KUHN\",\n            \"Telefone\": \"137143444\",\n            \"UF\": \"RS\",\n            \"relevance\": 30\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"15010110\",\n            \"CNPJ\": \"53206108000100\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"São José do Rio Preto\",\n            \"Complemento\": null,\n            \"DDD\": \"17\",\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"uniodorp@uniodontoriopreto.com.br\",\n            \"Fax\": 32346005,\n            \"Logradouro\": \"RUA INDEPENDENCIA \",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": \"UNIODONTO\",\n            \"Numero\": \"2651\",\n            \"Razao_Social\": \"UNIODONTO SÃO JOSÉ DO RIO PRETO - COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"303259\",\n            \"Representante\": \"JOSÉ CARLOS AFONSO CUGINOTTI\",\n            \"Telefone\": \"32118400\",\n            \"UF\": \"SP\",\n            \"relevance\": 30\n        },\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"20034900\",\n            \"CNPJ\": \"31240963000196\",\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Rio de Janeiro\",\n            \"Complemento\": \"SLJ 211,212,213\",\n            \"DDD\": \"21\",\n            \"Data_Registro_ANS\": \"1999-01-19\",\n            \"Endereco_eletronico\": \"appai@appai.org.br\",\n            \"Fax\": 25320563,\n            \"Logradouro\": \"RUA SENADOR DANTAS\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"APPAI\",\n            \"Numero\": \"117\",\n            \"Razao_Social\": \"ASSOCIAÇÃO BENEFICENTE DOS PROFESSORES PÚBLICOS ATIVOS E INATIVOS DO RIO DE JANEIRO - APPAI\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": \"382540\",\n            \"Representante\": \"JULIO CESAR DA COSTA\",\n            \"Telefone\": \"31473242\",\n            \"UF\": \"RJ\",\n            \"relevance\": 29\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "busca4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=202162100018",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "202162100018"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=202162100018",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "202162100018"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:27:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "779"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": \"36700000\",\n            \"CNPJ\": \"2021621000187\",\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Leopoldina\",\n            \"Complemento\": \"LOJA 01\",\n            \"DDD\": \"32\",\n            \"Data_Registro_ANS\": \"1999-03-11\",\n            \"Endereco_eletronico\": \"uniodonto@leopoldina.com.br\",\n            \"Fax\": 34415754,\n            \"Logradouro\": \"RUA JOSÉ PERES\",\n            \"Modalidade\": \"Cooperativa odontológica\",\n            \"Nome_Fantasia\": null,\n            \"Numero\": \"46\",\n            \"Razao_Social\": \"UNIODONTO LEOPOLDINA - COOPERATIVA ODONTOLÓGICA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": \"401919\",\n            \"Representante\": \"MARCELO RESENDE VIEIRA\",\n            \"Telefone\": \"34415754\",\n            \"UF\": \"MG\",\n            \"relevance\": 28\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "busca5",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/search?q=417301",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "417301"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "busca5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/search?q=417301",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "417301"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.10.6"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Mar 2025 22:27:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "813"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"results\": [\n        {\n            \"Bairro\": \"SÃO LUCAS\",\n            \"CEP\": \"30110021\",\n            \"CNPJ\": \"11340037000185\",\n            \"Cargo_Representante\": \"ADMINISTRADOR\",\n            \"Cidade\": \"Belo Horizonte\",\n            \"Complemento\": \"5º ANDAR\",\n            \"DDD\": \"31\",\n            \"Data_Registro_ANS\": \"2010-06-09\",\n            \"Endereco_eletronico\": \"CONTABILFISCAL@VALEM.COM.BR\",\n            \"Fax\": 32325099,\n            \"Logradouro\": \"AVENIDA DO CONTORNO\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"VALEM\",\n            \"Numero\": \"4265\",\n            \"Razao_Social\": \"VALEM ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"Regiao_de_Comercializacao\": 2,\n            \"Registro_ANS\": \"417301\",\n            \"Representante\": \"CÁTHIA COSTA CARVALHO RABELO\",\n            \"Telefone\": \"32493000\",\n            \"UF\": \"MG\",\n            \"relevance\": 40\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

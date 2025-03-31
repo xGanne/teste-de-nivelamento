@@ -5,9 +5,7 @@ import zipfile
 import re
 
 def baixar_arquivo(url, nome_arquivo):
-    """
-    Função para baixar um arquivo a partir de uma URL
-    """
+    """Função para baixar um arquivo a partir de uma URL"""
     print(f"Baixando {nome_arquivo}...")
     resposta = requests.get(url, stream=True)
     
