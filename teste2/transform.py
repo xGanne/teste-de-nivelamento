@@ -83,7 +83,7 @@ def main():
     # Configurações
     caminho_pdf = "anexo_i.pdf"  # Ajuste o caminho conforme necessário
     nome_csv_final = "rol_procedimentos.csv"
-    nome_zip = "Teste_FelipeAugustoClaudinoRamos.zip"
+    nome_zip = "Teste_FelipeAugusto.zip"
 
     try:
         # Extração dos dados do PDF

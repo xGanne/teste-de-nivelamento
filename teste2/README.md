@@ -43,7 +43,7 @@ teste2/
 │-- rol_procedimentos.csv                      # Arquivo .csv gerado pelo script com os devidos tratamentos.
 │-- README.md                                  # Documentação do projeto
 │-- requirements.txt                           # Lista de dependências
-│-- Teste_FelipeAugustoClaudinoRamos.zip       # Arquivo ZIP com o .csv armazenado
+│-- Teste_FelipeAugusto.zip       # Arquivo ZIP com o .csv armazenado
 ```
 
 ## Observações
