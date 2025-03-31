@@ -37,10 +37,10 @@ pip install -r requirements.txt
 ```sh
 teste1/
 │-- web-scraping_ans.py   # Script principal
-│-- anexos/           # Pasta onde os arquivos PDF serão salvos
-│-- anexos.zip        # Arquivo ZIP gerado (se a execução for bem-sucedida)
-│-- README.md         # Documentação do projeto
-│-- requirements.txt  # Lista de dependências
+│-- anexos/               # Pasta onde os arquivos PDF serão salvos
+│-- anexos.zip            # Arquivo ZIP gerado (se a execução for bem-sucedida)
+│-- README.md             # Documentação do projeto
+│-- requirements.txt      # Lista de dependências
 ```
 
 ## Observações
